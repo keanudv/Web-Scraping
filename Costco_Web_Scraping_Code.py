@@ -31,10 +31,10 @@ def scrape_data(url, name_tag, name_class, price_tag, price_class):
   if response.status_code == 200:
 
     # If successful, parse the content using BeautifulSoup
-    soup = BeautifulSoup(response.text, 'html.parse')
+    soup = BeautifulSoup(response.text, 'html.parser')
 
     # Creates an empty list to store the data
-    product = []
+    products = []
 
     # Loops through each product on the webpage to extract the name and price data
     for product in soup.find_all(name_tag, class_=name_class):
