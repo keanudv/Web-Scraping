@@ -12,7 +12,7 @@ def scrape_data(url, name_tag, name_class, price_tag, price_class):
   2. name_teg - The HTML tag for the product name.
   3. name_class - The HTML class for the product name.
   4. price_tag - The HTML tag for the product price.
-  5. price_class - The HTML class foe the product price.
+  5. price_class - The HTML class foR the product price.
 
   Returns:
   Show the name and price of each product on the webpage.
@@ -40,7 +40,7 @@ def scrape_data(url, name_tag, name_class, price_tag, price_class):
     for product in soup.find_all(name_tag, class_=name_class):
 
       # Extracts the product name data
-      name = product.text.strip() if data else "Name Not Found"
+      name = product.text.strip() if product else "Name Not Found"
 
       # Extracts the product price data
       price_element = product.find_next(price_tag, class_=price_class)
@@ -50,7 +50,7 @@ def scrape_data(url, name_tag, name_class, price_tag, price_class):
       products.append(
         {
           "name": name,
-          "price": price,
+          "price": price
         }
       )
 
