@@ -62,16 +62,6 @@ def scrape_data(url, name_tag, name_class, price_tag, price_class):
   else:
     print(f"failed to retrieve the webpage. Status Code: {response.status_code}")
 
-# Run the function to scrape the data
-if __name__ == "__main__":
-    scrape_data(
-        url="target URL", 
-        name_tag="html name tag", 
-        name_class="html name class", 
-        price_tag="html price tag", 
-        price_class="html price class"
-    )
-
 # Costco example
 if __name__ == "__main__":
     scrape_data(
