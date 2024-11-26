@@ -27,6 +27,6 @@
 <br>
 <p>In addition, this program can only scrape data from one webpage at a time (Pagination). Therefore, the program will fail to retrieve data from multiple webpages.</p>
 <br>
-<h3>Improvements</h
+<h3>Improvements</h3>
 <p>To over come these liminations, I will expand the program to use Selenium. Selenium is a package that automates a web browser to load JavaScript and flip to the next page or load more data.</p>
 <br>
