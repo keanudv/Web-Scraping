@@ -1,5 +1,4 @@
 <h1>Web Scraping Program</h1>
-<br>
 <h2>By Keanu Valencia</h2>
 <br>
 <h3>Description</h3>
